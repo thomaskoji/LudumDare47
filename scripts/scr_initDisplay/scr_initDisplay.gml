@@ -7,7 +7,7 @@ function scr_initDisplay() {
 	zoom = 1;
 
 	// calculate display aspect ratio
-	aspect_ratio = 16/9; //display_get_width()/display_get_height();
+	aspect_ratio = display_get_width()/display_get_height();
 	ideal_width = round(ideal_height*aspect_ratio);
 
 	// PIXEL PERFECT SCALING

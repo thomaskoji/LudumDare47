@@ -7,6 +7,8 @@ function scr_playerStateAttackBasic1(){
 		scr_stopMovement();
 	}
 
+	scr_calculateAttack(spr_playerBasicKatanaE,spr_playerBasicKatanaN,spr_playerBasicKatanaS)
+
 	if (scr_animationHitFrameRange(attackAnimationLength * attackAnimationTransitionRange, attackAnimationLength))
 	{
 		if (G.keyAttack[PRESSED]) scr_stateSwitch("attackBasic2");

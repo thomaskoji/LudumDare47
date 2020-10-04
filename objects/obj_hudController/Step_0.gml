@@ -1,0 +1,1 @@
+ if (G.currentGauge > 0) G.currentGauge -= drainEasy;

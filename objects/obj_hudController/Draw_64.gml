@@ -10,10 +10,10 @@ if(room = rm_demo)
 	draw_set_halign(fa_left);
 	draw_set_valign(fa_top);
 	var _debugString = "";
-	_debugString += "FPS: " + string(fps) + "\n";
 	if(instance_exists(obj_player))
 	{
-		_debugString += "State: " + string(obj_player.state) + "\n";
+		//_debugString += "FPS: " + string(fps) + "\n";
+		//_debugString += "State: " + string(obj_player.state) + "\n";
 		//_debugString += "X: " + string(obj_player.x) + "\n";
 		//_debugString += "Y: " + string(obj_player.y) + "\n";
 		//_debugString += "faceDir " + string(obj_player.faceDirection) + "\n";
@@ -23,9 +23,9 @@ if(room = rm_demo)
 		//_debugString += "mouseDir " + string(G.inputDirectionMouse) + "\n";
 		//_debugString += "mouseCardinalDir " + string(G.inputCardinalDirectionMouse) + "\n";
 		//_debugString += "keyInputDir: " + string(G.inputDirectionKeyboard) + "\n";
-		_debugString += "keyFaceDir: " + string(G.faceDirectionKeyboard) + "\n";
-		_debugString += "mouseFaceDir: " + string(G.faceDirectionMouse) + "\n";
-		_debugString += "FaceDir: " + string(obj_player.faceDirection) + "\n";
+		//_debugString += "keyFaceDir: " + string(G.faceDirectionKeyboard) + "\n";
+		//_debugString += "mouseFaceDir: " + string(G.faceDirectionMouse) + "\n";
+		//_debugString += "FaceDir: " + string(obj_player.faceDirection) + "\n"; 
 
 	}
 	draw_set_alpha(1);
@@ -33,3 +33,6 @@ if(room = rm_demo)
 }
 
 #endregion
+
+scr_nineSliceBox(spr_gaugeBG, gaugeX, gaugeY, gaugeX + gaugeW, gaugeY + gaugeH);
+scr_nineSliceBox(spr_gauge, gaugeX, gaugeY, gaugeX + gaugeMinimumW + G.currentGauge, gaugeY + gaugeH);

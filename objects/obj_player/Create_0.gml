@@ -34,3 +34,5 @@ attackAnimationTransitionRange = .3; // This value is used to times the attackAn
 
 onWall = 0; //1 right, -1 left
 hitByAttack = -1;
+
+attackDamage = 1;

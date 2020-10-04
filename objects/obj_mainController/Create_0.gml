@@ -5,6 +5,7 @@ event_inherited();
 instance_create_depth(0,0,0, obj_inputController);
 instance_create_depth(0,0,0, obj_displayController);
 instance_create_depth(0,0,0, obj_hudController);
+instance_create_depth(0,0,0, obj_spawnController);
 G.iCamera = instance_create_depth(0,0,0, obj_cameraController);
 
 
@@ -13,3 +14,4 @@ G.gamePaused = false;
 layer_set_visible("Collision", false);
 
 room_goto(ROOM_START);
+

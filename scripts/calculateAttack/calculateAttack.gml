@@ -29,6 +29,13 @@ function scr_calculateAttack(_maskE,_maskN,_maskS){
 			break;
 	}
 	
+	// my code
+	
+	if (!ds_exists(hitByAttack, ds_type_list)) hitByAttack = ds_list_create();
+	ds_list_clear(hitByAttack);
+	
+	// my code end
+	
 	var _hitByAttackNow = ds_list_create();
 	var _hits = instance_place_list(x, y, obj_entityParent, _hitByAttackNow, false);
 	
@@ -42,6 +49,11 @@ function scr_calculateAttack(_maskE,_maskN,_maskS){
 				ds_list_add(hitByAttack, _hitID);
 				with(_hitID)
 				{
+					if (object_is_ancestor(object_index, obj_enemyParent))
+					{
+						scr_hurtEnemy(id, other.id, other.attackDamage);
+					}
+					
 					if (entityHitScript != -1) script_execute(entityHitScript);
 				}
 			}

@@ -1,4 +1,4 @@
-// Mouse update control
+ // Mouse update control
 
 G.mouseCordinate[XAXIS] = G.iCamera.x - RESOLUTION_W * .5 + mouse_x;
 G.mouseCordinate[YAXIS] = G.iCamera.y - RESOLUTION_H * .5 + mouse_y;

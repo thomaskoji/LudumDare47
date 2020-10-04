@@ -29,3 +29,6 @@
 
 	// Images
 #macro DEFAULT_IMAGE_SPEED 1
+
+#macro is ==
+#macro isnt !=

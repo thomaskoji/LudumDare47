@@ -7,5 +7,7 @@ function scr_playerStateAttackBasic2(){
 		scr_stopMovement();
 	}
 	
+	scr_calculateAttack(spr_playerBasicKatanaE,spr_playerBasicKatanaN,spr_playerBasicKatanaS)
+	
 	if (scr_animationHitFrame(attackAnimationLength * 2)) scr_stateSwitch("wait");
 }
